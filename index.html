@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1953376195463944');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1953376195463944&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Join Official Channel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+-webkit-tap-highlight-color:transparent
+}
+
+html,body{
+height:100%;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+overflow:hidden;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+color:#fff;
+}
+
+/* Soft Background Glow */
+body:before{
+content:"";
+position:absolute;
+width:280px;
+height:280px;
+background:#0088cc;
+filter:blur(120px);
+opacity:.18;
+top:-80px;
+left:-80px;
+animation:float 6s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+from{transform:translateY(0px)}
+to{transform:translateY(30px)}
+}
+
+.container{
+width:92%;
+max-width:420px;
+padding:34px 26px;
+border-radius:28px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(25px);
+border:1px solid rgba(255,255,255,.15);
+text-align:center;
+box-shadow:0 20px 50px rgba(0,0,0,.6);
+position:relative;
+}
+
+.brand-title{
+font-size:26px;
+font-weight:800;
+margin-bottom:18px;
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.logo-container{
+width:120px;
+height:120px;
+margin:0 auto 18px;
+border-radius:50%;
+overflow:hidden;
+border:4px solid rgba(255,255,255,.2);
+box-shadow:0 0 25px rgba(0,136,204,.4);
+}
+
+.logo-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.bold-profit{
+font-size:17px;
+font-weight:700;
+color:#ffdd57;
+margin-bottom:14px;
+}
+
+.timer-box{
+margin:16px 0;
+font-size:28px;
+font-weight:800;
+color:#00e1ff;
+letter-spacing:2px;
+}
+
+.live-box{
+margin-bottom:26px;
+font-size:14px;
+font-weight:600;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:8px;
+opacity:.95;
+}
+
+.live-dot{
+width:9px;
+height:9px;
+background:#ff3b3b;
+border-radius:50%;
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1}
+50%{opacity:.3}
+100%{opacity:1}
+}
+
+.counter-number{
+font-weight:700;
+color:#ffdd57;
+}
+
+/* CTA BUTTON - REDUCED GLOW */
+.cta-btn{
+width:100%;
+padding:22px 0;
+border:none;
+border-radius:20px;
+font-size:22px;
+font-weight:800;
+cursor:pointer;
+background:linear-gradient(90deg,#0088cc,#00c6ff);
+color:#fff;
+
+/* Glow Reduced */
+box-shadow:0 8px 18px rgba(0,136,204,.35);
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:14px;
+transition:transform .15s ease;
+position:relative;
+overflow:hidden;
+}
+
+/* No hover zoom */
+.cta-btn:hover{
+transform:none;
+}
+
+/* Click effect only */
+.cta-btn:active{
+transform:scale(.95);
+}
+
+.cta-btn img{
+width:26px;
+height:26px;
+}
+
+/* Subtle Shine */
+.cta-btn:after{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);
+animation:shine 3s infinite;
+}
+
+@keyframes shine{
+0%{left:-100%}
+100%{left:100%}
+}
+
+.footer-text{
+font-size:13px;
+opacity:.7;
+margin-top:18px;
+}
+</style>
+
+<script>
+let t=30,l;
+
+function startTimer(){
+let c=document.getElementById("countdown");
+setInterval(()=>{
+if(t>0){
+t--;
+c.textContent="00:"+(t<10?"0"+t:t)
+}
+},1000)
+}
+
+function startLive(){
+let e=document.getElementById("liveNumber");
+l=Math.floor(Math.random()*140)+200;
+e.textContent=l;
+setInterval(()=>{
+l+=Math.floor(Math.random()*3)+1;
+e.textContent=l
+},3000)
+}
+
+function go(){
+window.location.href="https://t.me/+_RkEhPgiFO82MmU1";
+}
+
+window.onload=function(){
+startTimer();
+startLive();
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1 class="brand-title">SHAHIL ARMY</h1>
+
+<div class="logo-container">
+<img src="https://shahilbhai.netlify.app/logo.jpg">
+</div>
+
+<p class="bold-profit">DAILY FREE GIFTCODE</p>
+
+<div class="timer-box" id="countdown">00:30</div>
+
+<div class="live-box">
+<div class="live-dot"></div>
+LIVE • <span class="counter-number" id="liveNumber"></span> USERS JOINED
+</div>
+
+<button class="cta-btn" onclick="go()">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+CLICK HERE TO JOIN
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+</button>
+
+<p class="footer-text">Secure • Fast • Official Telegram Access</p>
+
+</div>
+
+</body>
+</html>
